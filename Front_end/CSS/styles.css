@@ -21,7 +21,7 @@
     margin-top: 50px;
 }
 
-/* color targetas */
+/* color tarjetas */
 .colorfondo-rojo {
     background-color: #e96767;
 }
@@ -124,8 +124,6 @@ body {
     padding: 20px;
 }
 
-
-
 /* Estilo del título */
 
     /* Estilizar el elemento modal-header */
@@ -172,6 +170,28 @@ body {
     transform: translateX(-50%);
     font-weight: bold;
   }
+
+  /* Estilo del contenedor de etiquetas y valores */
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px; /* Ajusta la posición vertical según sea necesario */
+  }
+  
+  /* Estilo de los valores mínimo, máximo y actual */
+  .range-labels span {
+    font-weight: bold;
+  }
+  
+
+
+ /*ESTILO BOTON CREAR */
+ .modal-footer button {
+    margin: 0 auto; /* Centra el botón horizontalmente */
+    display: block; /* Hace que el botón sea un bloque para la alineación */
+  }
+  
+  
   
 
 /*========== INTERFAZ 3 ==========*/

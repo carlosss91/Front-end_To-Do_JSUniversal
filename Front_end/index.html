@@ -168,94 +168,40 @@
         </div>
         <div class="form-floating mb-3"> <!--DESCRIPCIÓN -->
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-          <label for="floatingInput">Descripción BLA BLA BLA</label>
+          <label for="floatingInput">Descripción</label>
         </div>
         
         <!-- COLOR DE FONDO -->
-        <label for="color" class="form-label">Selecciona el color</label><input type="color" class="form-control form-control-color" id="color"
-        name="color" value="' + task.color + '" title="Elige el color">';
+        <div class="container-fluid"> <!--COLOR -->
+          <label for="color" class="form-label">Color</label><input type="color" class="form-control form-control-color" id="color"
+          name="color" value="' + task.color + '" title="Selecciona un color">
+        </div>
+        
 
         <div class="form-floating mb-3"> <!--OPINION -->
           <input type="name" class="form-control" id="floatingInput" placeholder="Opinion">
           <label for="floatingInput">Opinión</label>
         </div>
-
-        <!--
-          <label for="customRange3" class="form-label">Dificultad</label>
-        <input type="range" class="form-range" min="0" max="10" step="1" id="dificultad">
-        <div class="range-labels">
-          <span class="min-value">0</span>
-          <span class="max-value">10</span>
-          <span class="current-value">0</span>
+        
+        <!--DIFICULTAD-->
+        <label for="customRange3" class="form-label">Dificultad</label> 
+        <div class="d-flex justify-content-between">
+          <span id="min-value">0</span>
+          <span id="max-value">10</span>
         </div>
-      -->
+        <input type="range" class="form-range" min="0" max="10" step="1" id="dificultad">
+        <p>Valor Actual: <span id="current-value">5</span></p>
+        
+        
+      
         
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Guardar cambios</button>
+        <button type="button" class="btn btn-primary">Crear</button>
       </div>
     </div>
   </div>
 </div>
-   
-    
-    <!--
-     <div id="paper">
-      <h2>AÑADIR SEMESTRE</h2>
-      <form action="procesar_formulario.php" method="post">
-          <label for="nombre_semestre">Nombre del Semestre:</label>
-          <input type="text" id="nombre_semestre" name="nombre_semestre" required>
-
-          <label for="ano">Año:</label>
-          <input type="number" id="ano" name="ano" required>
-
-          <label for="fecha_inicio">Fecha de Inicio:</label>
-          <input type="date" id="fecha_inicio" name="fecha_inicio" required>
-
-          <label for="fecha_fin">Fecha de Fin:</label>
-          <input type="date" id="fecha_fin" name="fecha_fin" required>
-
-          <label for="descripcion">Descripción:</label><br>
-          <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea>
-
-          <div class="color-selection">
-              <label>Selecciona un color:</label>
-              <div class="color-option" style="background-color: yellow;"></div>
-              <div class="color-option" style="background-color: orange;"></div>
-              <div class="color-option" style="background-color: pink;"></div>
-              <div class="color-option" style="background-color: red;"></div>
-              <div class="color-option" style="background-color: green;"></div>
-              <div class="color-option" style="background-color: turquoise;"></div>
-              <div class="color-option" style="background-color: blue;"></div>
-              <div class="color-option" style="background-color: violet;"></div>
-              <div class="color-option" style="background-color: purple;"></div>
-              <div class="color-option" style="background-color: grey;"></div>
-              <div class="color-option" style="background-color: black;"></div>
-              <div class="color-option">
-                <input type="color" id="color" name="color">
-              </div>
-          </div>
-
-          <label for="opinion">Opinión:</label>
-          <select id="opinion" name="opinion">
-              <option value="buena">Buena</option>
-              <option value="regular">Regular</option>
-              <option value="mala">Mala</option>
-          </select>
-
-          <label for="dificultad">Grado de Dificultad:</label>
-          <input type="range" id="dificultad" name="dificultad" min="1" max="10" step="1">
-
-          <div class="submit-button">
-              <input type="submit" value="Crear Semestre">
-          </div>
-    </div>
-      </form> 
-    -->
-
-  
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="JS/script.js"></script>
     <script src="ruta/a/jquery.min.js"></script>

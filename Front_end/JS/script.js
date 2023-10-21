@@ -15,7 +15,7 @@ function vermas(){ //para que salte modal ver +
   }
 
   //INTERFAZ 2
-  
+
 // Obtén el elemento 'select' por su ID
 var selectYear = document.getElementById('year');
 
@@ -46,19 +46,18 @@ $(document).ready(function() {
     });
   });
 
-// Obtén referencias a los elementos HTML y el rango de dificultad
-const range = document.getElementById('dificultad');
-const minValue = document.querySelector('.min-value');
-const maxValue = document.querySelector('.max-value');
-const currentValue = document.querySelector('.current-value');
+//BARRA DE DIFICULTAD
 
-// Agrega un evento de cambio al rango para actualizar los valores
-range.addEventListener('input', function() {
-  // Actualiza el valor actual
-  currentValue.textContent = range.value;
+document.addEventListener('DOMContentLoaded', function() {
+  const currentValue = document.getElementById('current-value');
+  const dificultad = document.getElementById('dificultad');
+
+  currentValue.textContent = dificultad.value; // Inicializamos el valor actual con 5
+
+  dificultad.addEventListener('input', function() {
+    currentValue.textContent = dificultad.value;
+  });
 });
 
-// Inicializa los valores mínimo y máximo
-minValue.textContent = range.min;
-maxValue.textContent = range.max;
-currentValue.textContent = range.value;
+
+
