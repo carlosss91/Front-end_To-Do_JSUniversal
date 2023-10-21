@@ -170,47 +170,25 @@
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
           <label for="floatingInput">Descripción</label>
         </div>
-        <div class="form-floating mb-3"> <!-- COLOR DE FONDO -->
-          <button type="button" class="btn" id="background-color" data-bs-toggle="popover" data-bs-content="Selecciona un color de fondo">Selecciona un color</button>
-          <label for="background-color">Color de Fondo</label>
-        </div>
-        <div id="color-picker-popover" style="display: none;">
-          <div class="color-box" style="background-color: white;"></div>
-          <div class="color-box" style="background-color: yellow;"></div>
-          <div class="color-box" style="background-color: orange;"></div>
-          <div class="color-box" style="background-color: pink;"></div>
-          <div class="color-box" style="background-color: red;"></div>
-          <div class="color-box" style="background-color: lightgreen;"></div>
-          <div class="color-box" style="background-color: darkgreen;"></div>
-          <div class="color-box" style="background-color: lightblue;"></div>
-          <div class="color-box" style="background-color: darkblue;"></div>
-          <div class="color-box" style="background-color: violet;"></div>
-          <div class="color-box" style="background-color: purple;"></div>
-          <div class="color-box" style="background-color: brown;"></div>
-          <div class="color-box" style="background-color: grey;"></div>
-          <div class="color-box" style="background-color: black;"></div>
-        </div>
+        
+        <!-- COLOR DE FONDO -->
+        <label for="color" class="form-label">Selecciona el color</label><input type="color" class="form-control form-control-color" id="color"
+        name="color" value="' + task.color + '" title="Elige el color">';
+
         <div class="form-floating mb-3"> <!--OPINION -->
           <input type="name" class="form-control" id="floatingInput" placeholder="Opinion">
           <label for="floatingInput">Opinión</label>
         </div>
 
-        <label for="customRange3" class="form-label">Dificultad</label> <!-- DIFCULTAD -->
+        <!--
+          <label for="customRange3" class="form-label">Dificultad</label>
         <input type="range" class="form-range" min="0" max="10" step="1" id="dificultad">
         <div class="range-labels">
           <span class="min-value">0</span>
           <span class="max-value">10</span>
-          <span class="current-value">5</span>
+          <span class="current-value">0</span>
         </div>
-        
-        <label for="customRange3" class="form-label">Dificultad</label>
-        <input type="range" class="form-range" min="0" max="10" step="1" id="dificultad">
-        <div class="range-labels">
-          <span class="min-value">0</span>
-          <span class="max-value">10</span>
-        </div>
-        <span class="current-value">0</span>
-        
+      -->
         
       </div>
       <div class="modal-footer">
