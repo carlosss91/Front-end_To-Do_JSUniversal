@@ -137,6 +137,7 @@ body {
   /* Estilizar el elemento modal-title */
     .modal-title 
     {
+        width: 100%;
         margin: 0 auto; /* Centrar horizontalmente el título dentro de modal-title */
         color: black; /* Establecer el color del texto en blanco (cambia "white" al color de texto deseado) */
     }

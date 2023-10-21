@@ -15,11 +15,20 @@ function vermas(){ //para que salte modal ver +
   }
 
   //INTERFAZ 2
-  // Obtén el elemento 'select' por su ID
+  
+// Obtén el elemento 'select' por su ID
 var selectYear = document.getElementById('year');
 
 // Obtiene el año actual
 var currentYear = new Date().getFullYear();
+
+// Agrega los años actuales y los próximos 10 años al selector
+for (var i = currentYear; i <= currentYear + 10; i++) {
+    var option = document.createElement('option');
+    option.text = i;
+    option.value = i;
+    selectYear.add(option);
+}
 
 $(document).ready(function() {
     // Inicializa los popovers
