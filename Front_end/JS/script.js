@@ -58,6 +58,37 @@ document.addEventListener('DOMContentLoaded', function() {
     currentValue.textContent = dificultad.value;
   });
 });
+$(document).ready(function () {
+  $('#crearSemestre').on('click', function () {
+      var nombreSemestre = $('#nombreSemestre').val();
+      var año = $('#año').val();
+      var fechaInicio = $('#fechaInicio').val();
+      var fechaFin = $('#fechaFin').val();
+      var descripcion = $('#descripcion').val();
+      var color = $('#color').val();
+      var opinion = $('#opinion').val();
+      var dificultad = $('#dificultad').val();
+
+      var nuevaTarjeta = `
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">${nombreSemestre}</h5>
+                  <p class="card-text">Año: ${año}</p>
+                  <p class="card-text">Descripción: ${descripcion}</p>
+                  <p class="card-text">Opinión: ${opinion}</p>
+                  <p class="card-text">Dificultad: ${dificultad}/10</p>
+              </div>
+          </div>
+      `;
+
+      // Agregar la tarjeta al contenedor deseado (reemplaza 'contenedorTarjetas' con el selector correcto)
+      $('.contenedorTarjetas').append(nuevaTarjeta);
+
+      $('#exampleModal').modal('hide');
+      $('#semestre-form')[0].reset();
+  });
+});
+
 
 
 

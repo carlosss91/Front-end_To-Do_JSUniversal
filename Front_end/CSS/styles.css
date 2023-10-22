@@ -39,7 +39,7 @@
 }
 
 .colorfondo-turquesa {
-    background-color: #9afafa;
+    background-color: #c9eeee;
 }
 
 .colorfondo-azul {
@@ -119,17 +119,22 @@
 
 /* Estilo del cuerpo */
 body {
-    background-color: #c0d8f0; /* Fondo celeste */
+    background-color: #e0f6ff; /* Fondo celeste */
     text-align: center;
     padding: 20px;
 }
+/* Estilo para el fondo del formulario modal */
+#exampleModal .modal-content {
+    background-color: #edf3f9; /* Cambia el color de fondo a lo que desees */
+}
+
 
 /* Estilo del título */
 
     /* Estilizar el elemento modal-header */
     .modal-header 
     {
-        background-color: rgba(128, 128, 128, 0.395); /* Establecer el fondo en color gris (cambia "gray" al color deseado) */
+        background-color: rgba(190, 186, 186, 0.627); /* Establecer el fondo en color gris (cambia "gray" al color deseado) */
     }
   
   /* Estilizar el elemento modal-title */

@@ -145,29 +145,36 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-         
-        <div class="form-floating mb-3"> <!--NOMBRE DEL SEMESTRE -->
-          <input type="name" class="form-control" id="floatingInput" placeholder="Nombre del Semestre">
+         <!--NOMBRE DEL SEMESTRE -->
+         <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="Nombre del Semestre" required pattern="^[a-zA-Z0-9\s]+$">
           <label for="floatingInput">Nombre del Semestre</label>
         </div>
-      
-        <div class="form-floating"> <!--AÑO -->
-          <select class="form-select" id="year" aria-label="Default select example">
+
+        <!--AÑO -->
+        <div class="form-floating"> 
+          <select class="form-select" id="year" aria-label="Default select example" required>
             <option selected> Selecciona un año</option>
           </select>
           <label for="floatingSelect">Año</label>
         </div>
         <br> <!-- Elemento <br> para agregar espacio vertical -->
-        <div class="form-floating mb-3"> <!--FECHA COMIENZA -->
-          <input type="date" class="form-control" id="floatingInput" placeholder="fecha_inicio">
+        
+        <!--FECHA COMIENZA -->
+        <div class="form-floating mb-3">
+          <input type="date" class="form-control" id="floatingInput" placeholder="fecha_inicio"`required>
           <label for="floatingInput">Fecha de Inicio</label>
         </div>
-        <div class="form-floating mb-3"> <!--FECHA FIN -->
-          <input type="date" class="form-control" id="floatingInput" placeholder="fecha_fin">
+        
+        <!--FECHA FIN -->
+        <div class="form-floating mb-3"> 
+          <input type="date" class="form-control" id="floatingInput" placeholder="fecha_fin" required>
           <label for="floatingInput">Fecha de Fin</label>
         </div>
-        <div class="form-floating mb-3"> <!--DESCRIPCIÓN -->
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+        
+        <!--DESCRIPCIÓN -->
+        <div class="form-floating mb-3"> 
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" required></textarea>
           <label for="floatingInput">Descripción</label>
         </div>
         
@@ -177,8 +184,8 @@
           name="color" value="' + task.color + '" title="Selecciona un color">
         </div>
         
-
-        <div class="form-floating mb-3"> <!--OPINION -->
+        <!--OPINION -->
+        <div class="form-floating mb-3"> 
           <input type="name" class="form-control" id="floatingInput" placeholder="Opinion">
           <label for="floatingInput">Opinión</label>
         </div>
@@ -190,14 +197,12 @@
           <span id="max-value">10</span>
         </div>
         <input type="range" class="form-range" min="0" max="10" step="1" id="dificultad">
-        <p>Valor Actual: <span id="current-value">5</span></p>
-        
-        
-      
-        
+        <p>Valor Actual: <span id="current-value">5</span></p>      
       </div>
+
+      <!--BOTON CREAR-->
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Crear</button>
+        <button type="button" class="btn btn-primary" id="crearSemestre">Crear</button>
       </div>
     </div>
   </div>
