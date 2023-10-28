@@ -1,217 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="ruta/a/bootstrap-colorpicker.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="img/LOGO.png" alt="Logo" width="130" height="48" class="d-inline-block align-text-top">
+          <img
+            src="img/LOGO.png"
+            alt="Logo"
+            width="130"
+            height="48"
+            class="d-inline-block align-text-top"
+          />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item dropdow">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 <i class="bi bi-list"></i>
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Dashboard</a></li>
-                <li><a class="dropdown-item" href="interfaz_3.html">To-Do</a></li>
+                <li>
+                  <a class="dropdown-item" href="interfaz_3.html">To-Do</a>
+                </li>
               </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="modal fade" id="ModalSemestre" tabindex="-1" aria-labelledby="ModalSemestre" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">titulo</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            blablablablablabla
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="container padding-top-lg">
       <div class="row margem-bottom-xl">
-        <div class="margen-top-lg col-sm-4" id="semestre-1">
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title colorfondo-lila">CURSO 2023 - 2024</h5>
-              <div class="padding-sm">
-                <p class="card-text">1 SEMESTRE</p>
-                <a href="#" class="btn btn-primary" id="añadir" onclick="vermas()">ver +</a>
-                <button class="btn btn-danger" id="eliminar" onclick="eliminar(1)">
-                  <i class="fas fa-trash"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="margen-top-lg col-sm-4" id="semestre-2">
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title colorfondo-turquesa">CURSO 2023 - 2024</h5>
-              <div class="padding-sm">
-                <p class="card-text">2 SEMESTRE</p>
-                <a href="#" class="btn btn-primary" id="añadir" onclick="vermas()">ver +</a>
-                <button class="btn btn-danger" id="eliminar" onclick="eliminar(2)">
-                  <i class="fas fa-trash"></i>
-            </div>
-            </div>
-          </div>
-        </div>
-        <div class="margen-top-lg col-sm-4" id="semestre-3">
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title colorfondo-rosa">CURSO 2023 - 2024</h5>
-              <div class="padding-sm">
-                <p class="card-text">3 SEMESTRE</p>
-                <a href="#" class="btn btn-primary" id="añadir" onclick="vermas()">ver +</a>
-                <button class="btn btn-danger" id="eliminar" onclick="eliminar(3)">
-                  <i class="fas fa-trash"></i>
-            </div>
-            </div>
-          </div>
-        </div>
-        <div class="margen-top-lg col-sm-4" id="semestre-4">
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title colorfondo-rojo">CURSO 2022 - 2023</h5>
-              <div class="padding-sm">
-                <p class="card-text">1 SEMESTRE.</p>
-                <a href="#" class="btn btn-primary" id="añadir" onclick="vermas()">ver +</a>
-                <button class="btn btn-danger" id="eliminar" onclick="eliminar()">
-                  <i class="fas fa-trash"></i>
-            </div>
-            </div>
-          </div>
-        </div>
-        <div class="margen-top-lg col-sm-4" id="semestre-5">
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title colorfondo-azul">CURSO 2022 - 2023</h5>
-              <div class="padding-sm">
-                <p class="card-text">2 SEMESTRE</p>
-                <a href="#" class="btn btn-primary" id="añadir" onclick="vermas()">ver +</a>
-                <button class="btn btn-danger" id="eliminar" onclick="eliminar()">
-                  <i class="fas fa-trash"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="margen-top-lg col-sm-4" id="semestre-6">
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title colorfondo-verde">CURSO 2022 - 2023</h5>
-              <div class="padding-sm">
-                <p class="card-text">3 SEMESTRE</p>
-                <a href="#" class="btn btn-primary" id="añadir" onclick="vermas()">ver +</a>
-                <button class="btn btn-danger" id="eliminar" onclick="eliminar()">
-                  <i class="fas fa-trash"></i>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div id="semester-list"></div>
         <!-- Button trigger modal -->
-        <div class="padding-sm text-right margen-top-lg">
-          <button type="button" class="btn btn-primary" id="añadir-semestre" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <div class="padding-sm text-right margin-top-lg">
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="añadir-semestre"
+            onclick="drawModalSemester(false)"
+          >
             + añadir semestre
           </button>
         </div>
       </div>
     </div>
-    
-   <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">AÑADIR SEMESTRE</h1> <!--TITULO AÑADIR SEMESTRE -->
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-         <!--NOMBRE DEL SEMESTRE -->
-         <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="floatingInput" placeholder="Nombre del Semestre" required pattern="^[a-zA-Z0-9\s]+$">
-          <label for="floatingInput">Nombre del Semestre</label>
-        </div>
-
-        <!--AÑO -->
-        <div class="form-floating"> 
-          <select class="form-select" id="year" aria-label="Default select example" required>
-            <option selected> Selecciona un año</option>
-          </select>
-          <label for="floatingSelect">Año</label>
-        </div>
-        <br> <!-- Elemento <br> para agregar espacio vertical -->
-        
-        <!--FECHA COMIENZA -->
-        <div class="form-floating mb-3">
-          <input type="date" class="form-control" id="floatingInput" placeholder="fecha_inicio"`required>
-          <label for="floatingInput">Fecha de Inicio</label>
-        </div>
-        
-        <!--FECHA FIN -->
-        <div class="form-floating mb-3"> 
-          <input type="date" class="form-control" id="floatingInput" placeholder="fecha_fin" required>
-          <label for="floatingInput">Fecha de Fin</label>
-        </div>
-        
-        <!--DESCRIPCIÓN -->
-        <div class="form-floating mb-3"> 
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" required></textarea>
-          <label for="floatingInput">Descripción</label>
-        </div>
-        
-        <!-- COLOR DE FONDO -->
-        <div class="container-fluid"> <!--COLOR -->
-          <label for="color" class="form-label">Color</label><input type="color" class="form-control form-control-color" id="color"
-          name="color" value="' + task.color + '" title="Selecciona un color">
-        </div>
-        
-        <!--OPINION -->
-        <div class="form-floating mb-3"> 
-          <input type="name" class="form-control" id="floatingInput" placeholder="Opinion">
-          <label for="floatingInput">Opinión</label>
-        </div>
-        
-        <!--DIFICULTAD-->
-        <label for="customRange3" class="form-label">Dificultad</label> 
-        <div class="d-flex justify-content-between">
-          <span id="min-value">0</span>
-          <span id="max-value">10</span>
-        </div>
-        <input type="range" class="form-range" min="0" max="10" step="1" id="dificultad">
-        <p>Valor Actual: <span id="current-value">5</span></p>      
-      </div>
-
-      <!--BOTON CREAR-->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" id="crearSemestre">Crear</button>
-      </div>
-    </div>
-  </div>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="JS/script.js"></script>
-    <script src="ruta/a/jquery.min.js"></script>
-    <script src="ruta/a/bootstrap.min.js"></script>
-    <script src="ruta/a/bootstrap-colorpicker.min.js"></script>
-
   </body>
 </html>
